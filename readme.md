@@ -21,14 +21,13 @@ $ mamba install --channel=conda-forge --name=base conda-lock
 $ git clone https://github.com/prio-data/<project_name>
 $ cd <project_name>
 ```
-
-1. Create the virtual environment based on lock-file created from environment.yml
+5. Create the virtual environment based on lock-file created from environment.yml
 
 ``` console
+$ conda-lock
 $ conda-lock install -n my_project_env  --mamba
 $ mamba activate my_project_env
 ```
-
 6. Run poetry to add additional python package requirements.
 
 ```console
